@@ -9,14 +9,28 @@
     <title>Раздеть девушку по фото: все боты тг, сайты и нейросети раздеваторы</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="canonical" href="https://razdevator-po-foto.github.io/" />
+    <link rel="icon" href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" type="image/svg+xml" />
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <!-- Header -->
     <header class="bg-blue-600 text-white">
-        <div class="container text-center mx-auto px-6 py-4">
+        <div class="container mx-auto px-2 py-2 flex items-center justify-between">
+                <a href="https://razdevator-po-foto.github.io/" class="flex items-center space-x-2">
+                    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png" alt="Logo" class="h-16 w-16 object-contain"> 
+                </a>
             <h1 class="text-3xl font-bold">Нейросети и телеграм-боты для раздевания девушек по фото</h1>
             <p class="text-xl mt-2">Здесь можно раздеть фотографию подруги.</p>
-        </div>
+            <button id="menu-toggle" class="text-white focus:outline-none ml-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <nav id="main-menu" class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center">
+                <a href="https://razdevator-po-foto.github.io/mini-telegram/" class="block hover:underline">Каталог приложений Телеграмм</a>
+            </nav>
+        
     </header>
     
     <!-- Main Content -->
@@ -24,7 +38,7 @@
         <section class="text-center mb-12">
             
             <p class="text-lg mb-6">
-                Возможность бесплатно раздеть по фото подругу – пришлась по вкусу многим пользователям сети-интернет. Для развлечения поклонников AI nude было разработано огромное количество программ, а также специальных ботов, способных в течение нескольких минут удалить лишние детали одежды с фотографии. Каждый сервис имеет свои особенности интерфейса, отличия по стоимости, принципу работы и скорости. Представленный ниже рейтинг позволит подобрать лучшее ПО. В результате, человек, который хочет бесплатно раздеть девушку по фото, сможет быть уверенным в своей конфиденциальности, а также положительном результате. Последнее время набирают популярность NFT, читайте также <a class="text-blue-600" href="https://razdevator-po-foto.github.io/podarok-v-telegram/">где купить или продать подарок в Телеграмм</a>.</p>                    
+                Возможность бесплатно раздеть по фото подругу – пришлась по вкусу многим пользователям сети-интернет. Для развлечения поклонников AI nude было разработано огромное количество программ, а также специальных ботов, способных в течение нескольких минут удалить лишние детали одежды с фотографии. Каждый сервис имеет свои особенности интерфейса, отличия по стоимости, принципу работы и скорости. Представленный ниже рейтинг позволит подобрать лучшее ПО. В результате, человек, который хочет бесплатно раздеть девушку по фото, сможет быть уверенным в своей конфиденциальности, а также положительном результате.</p>                    
 </p>
             <a href="#tgboty" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Телеграм боты</a>
             <a href="#saity" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Сайты</a>
@@ -346,7 +360,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-4">
         <div class="container mx-auto text-center">
-            <p class="mb-3">&copy; 2024 Раздеватор. Все права защищены.</p>
+            <p class="mb-3">&copy; 2025 Раздеватор. Все права защищены.</p>
         </div>
     </footer>
 <!-- Yandex.Metrika counter -->
@@ -365,5 +379,15 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.getElementById('menu-toggle');
+        const menu = document.getElementById('main-menu');
+
+        toggleButton.addEventListener('click', function () {
+            menu.classList.toggle('hidden');
+        });
+    });
+</script>
 </body>
 </html>
