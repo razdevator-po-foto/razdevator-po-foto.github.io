@@ -1,112 +1,97 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Создавайте и отправляйте мем-подарки в Telegram! Кастомизация, быстрый интерфейс. Присоединяйтесь к 67 455 пользователям.">
-
-    <title>## Memgift в Telegram: создавайте и отправляйте уникальные мем-подарки!</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="canonical" href="/memgift/" />
-    <link rel="icon" href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" type="image/svg+xml" />
-</head>
+<meta charset="utf-8"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Создавайте и отправляйте мем-подарки в Telegram! Кастомизация, быстрый интерфейс. Присоединяйтесь к 67 455 пользователям." name="description"/>
+<title>## Memgift в Telegram: создавайте и отправляйте уникальные мем-подарки!</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="/memgift/" rel="canonical">
+<link href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+</link></meta></head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white">
-            <div class="container mx-auto px-2 py-2 flex items-center justify-between">
-                
-                <a href="https://razdevator-po-foto.github.io/" class="flex items-center space-x-2">
-                    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png" alt="Logo" class="h-16 w-16 object-contain">
-                    
-                </a>
-                <h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">Memgift</h1>
-                <button id="menu-toggle" class="text-white focus:outline-none ml-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <nav id="main-menu" class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center">
-                <a href="https://razdevator-po-foto.github.io/mini-telegram/" class="block hover:underline">Каталог приложений Телеграмм</a>
-            </nav>
-        </header>
-    
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
-        <section class="mb-12">
-          <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
-
-            <div class="md:w-1/3 flex justify-end">
-              <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/memgift_og.jpg" alt="Memgift" class="w-24 h-24 max-w-xs" />
-            </div>
-
-            <div class="md:w-2/3">
-              <p class="text-lg mb-4">Откройте мир уникальных Memgift в Telegram! Создавайте и отправляйте оригинальные мемы-подарки, чтобы порадовать близких. Подарите эмоции с Memgift – это просто и весело!</p>
-            </div>
-          </div>
-
-          <div class="mt-6 text-center">
-            <a href="https://t.me/MemeGiftBot" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" rel="noopener noreferrer" target="_blank">
+<!-- Header -->
+<header class="bg-blue-600 text-white">
+<div class="container mx-auto px-2 py-2 flex items-center justify-between">
+<a class="flex items-center space-x-2" href="https://razdevator-po-foto.github.io/">
+<img alt="Logo" class="h-16 w-16 object-contain" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png"/>
+</a>
+<h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">Memgift</h1>
+<button class="text-white focus:outline-none ml-4" id="menu-toggle">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+</div>
+<nav class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center" id="main-menu">
+<a class="block hover:underline" href="https://razdevator-po-foto.github.io/mini-telegram/">Каталог приложений Телеграмм</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-12">
+<section class="mb-12">
+<div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
+<div class="md:w-1/3 flex justify-end">
+<img alt="Memgift" class="w-24 h-24 max-w-xs" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/memgift_og.jpg">
+</img></div>
+<div class="md:w-2/3">
+<p class="text-lg mb-4">Откройте мир уникальных Memgift в Telegram! Создавайте и отправляйте оригинальные мемы-подарки, чтобы порадовать близких. Подарите эмоции с Memgift – это просто и весело!</p>
+</div>
+</div>
+<div class="mt-6 text-center">
+<a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://t.me/MemeGiftBot?start=_tgr_8Qa-aq8zZWVi" rel="noopener noreferrer" target="_blank">
               Запустить в Телеграмм
             </a>
-          </div>
-        </section>
-        <section class="mb-12">
-            <div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-<div class="flex justify-center gap-4 my-4">
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/memgift_1.jpg" alt="Создание и отправка персонализированных мем-подарков в Telegram" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/memgift_2.jpg" alt="Быстрые и оригинальные поздравления с Memgift для друзей" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/memgift_3.jpg" alt="Уникальные виртуальные сюрпризы через Telegram-приложение Memgift" class="w-1/3 rounded shadow"/>
 </div>
-
+</section>
+<section class="mb-12">
+<div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex justify-center gap-4 my-4">
+<img alt="Создание и отправка персонализированных мем-подарков в Telegram" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/memgift_1.jpg"/>
+<img alt="Быстрые и оригинальные поздравления с Memgift для друзей" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/memgift_2.jpg"/>
+<img alt="Уникальные виртуальные сюрпризы через Telegram-приложение Memgift" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/memgift_3.jpg"/>
+</div>
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Memgift: ваше решение для ярких поздравлений в Telegram</h2>
-
 <p class="mb-2">Memgift – это инновационное мини-приложение в Telegram, которое открывает новые возможности для выражения ваших эмоций и поздравлений. С его помощью вы сможете легко отправлять оригинальные мем-подарки своим друзьям, делиться ими в группах или каналах, а также создавать собственные, неповторимые виртуальные сюрпризы. Сервис создан для тех, кто ценит скорость, креативность и хочет добавить позитива в повседневное общение.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Как это работает: просто и быстро</h2>
-
 <p class="mb-2">Отправить мем-подарок с Memgift — это проще простого:</p>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Выбирайте или создавайте:</strong> найдите идеальный готовый мем в обширном каталоге или проявите фантазию, создав свой уникальный дизайн.</li>
-    <li class="mb-2"><strong>Указывайте получателя:</strong> просто выберите контакт, группу или канал, куда хотите отправить свой креативный подарок.</li>
-    <li class="mb-2"><strong>Отправляйте мгновенно:</strong> все происходит в несколько кликов, прямо внутри Telegram, без необходимости переключаться между приложениями.</li>
+<li class="mb-2"><strong>Выбирайте или создавайте:</strong> найдите идеальный готовый мем в обширном каталоге или проявите фантазию, создав свой уникальный дизайн.</li>
+<li class="mb-2"><strong>Указывайте получателя:</strong> просто выберите контакт, группу или канал, куда хотите отправить свой креативный подарок.</li>
+<li class="mb-2"><strong>Отправляйте мгновенно:</strong> все происходит в несколько кликов, прямо внутри Telegram, без необходимости переключаться между приложениями.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Что нового в Memgift?</h2>
 <p class="mb-2">Мы постоянно работаем над улучшением Memgift, чтобы ваш опыт был максимально приятным:</p>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Свежие шаблоны:</strong> регулярно пополняем коллекцию актуальными и забавными мемами.</li>
-    <li class="mb-2"><strong>Расширенные возможности персонализации:</strong> добавляйте свои тексты, изображения и эффекты, делая подарки по-настоящему вашими.</li>
-    <li class="mb-2"><strong>Удобный интерфейс:</strong> навигация по категориям стала еще быстрее и интуитивнее.</li>
-    <li class="mb-2"><strong>Оптимизированная интеграция:</strong> улучшенная работа с группами и каналами для бесшовной отправки.</li>
+<li class="mb-2"><strong>Свежие шаблоны:</strong> регулярно пополняем коллекцию актуальными и забавными мемами.</li>
+<li class="mb-2"><strong>Расширенные возможности персонализации:</strong> добавляйте свои тексты, изображения и эффекты, делая подарки по-настоящему вашими.</li>
+<li class="mb-2"><strong>Удобный интерфейс:</strong> навигация по категориям стала еще быстрее и интуитивнее.</li>
+<li class="mb-2"><strong>Оптимизированная интеграция:</strong> улучшенная работа с группами и каналами для бесшовной отправки.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Идеи для использования</h2>
 <p class="mb-2">Memgift идеально подходит для множества ситуаций:</p>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Праздничные поздравления:</strong> дни рождения, Новый год, 8 Марта, 23 Февраля – сделайте поздравления незабываемыми.</li>
-    <li class="mb-2"><strong>Поднятие настроения:</strong> отправляйте забавные мемы друзьям, чтобы просто порадовать их.</li>
-    <li class="mb-2"><strong>Корпоративное общение:</strong> используйте для неформальных поздравлений и поддержания командного духа в рабочих чатах.</li>
-    <li class="mb-2"><strong>Тематические сообщества:</strong> делитесь юмором и эмоциями в своих любимых группах и каналах.</li>
+<li class="mb-2"><strong>Праздничные поздравления:</strong> дни рождения, Новый год, 8 Марта, 23 Февраля – сделайте поздравления незабываемыми.</li>
+<li class="mb-2"><strong>Поднятие настроения:</strong> отправляйте забавные мемы друзьям, чтобы просто порадовать их.</li>
+<li class="mb-2"><strong>Корпоративное общение:</strong> используйте для неформальных поздравлений и поддержания командного духа в рабочих чатах.</li>
+<li class="mb-2"><strong>Тематические сообщества:</strong> делитесь юмором и эмоциями в своих любимых группах и каналах.</li>
 </ul>
 <p class="mb-2">Memgift — это ваш персональный инструмент для создания ярких моментов и искренних улыбок в Telegram.</p>
 </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p class="mb-3">&copy; 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
-        </div>
-    </footer>
-
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-4">
+<div class="container mx-auto text-center">
+<p class="mb-3">© 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
+</div>
+</footer>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -119,7 +104,7 @@
         accurateTrackBounce:true
    });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;"/></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {

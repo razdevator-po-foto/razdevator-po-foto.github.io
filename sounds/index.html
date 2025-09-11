@@ -1,107 +1,95 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sounds в Телеграм: каталог мемных голосовых сообщений по команде @sounds. Выбирайте и отправляйте забавные аудиофрагменты в чаты.">
-
-    <title>Мемные звуки для Telegram: лучшие аудио для чатов.</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="canonical" href="/sounds/" />
-    <link rel="icon" href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" type="image/svg+xml" />
-</head>
+<meta charset="utf-8"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Sounds в Телеграм: каталог мемных голосовых сообщений по команде @sounds. Выбирайте и отправляйте забавные аудиофрагменты в чаты." name="description"/>
+<title>Мемные звуки для Telegram: лучшие аудио для чатов.</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="/sounds/" rel="canonical">
+<link href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+</link></meta></head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white">
-            <div class="container mx-auto px-2 py-2 flex items-center justify-between">
-                
-                <a href="https://razdevator-po-foto.github.io/" class="flex items-center space-x-2">
-                    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png" alt="Logo" class="h-16 w-16 object-contain">
-                    
-                </a>
-                <h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">Sounds</h1>
-                <button id="menu-toggle" class="text-white focus:outline-none ml-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <nav id="main-menu" class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center">
-                <a href="https://razdevator-po-foto.github.io/mini-telegram/" class="block hover:underline">Каталог приложений Телеграмм</a>
-            </nav>
-        </header>
-    
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
-        <section class="mb-12">
-          <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
-
-            <div class="md:w-1/3 flex justify-end">
-              <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/sounds_og.jpg" alt="Sounds" class="w-24 h-24 max-w-xs" />
-            </div>
-
-            <div class="md:w-2/3">
-              <p class="text-lg mb-4">Sounds: откройте мир мемных голосовых в Telegram! Уникальная коллекция для вашего общения.</p>
-            </div>
-          </div>
-
-          <div class="mt-6 text-center">
-            <a href="https://t.me/soundsapp_bot" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" rel="noopener noreferrer" target="_blank">
+<!-- Header -->
+<header class="bg-blue-600 text-white">
+<div class="container mx-auto px-2 py-2 flex items-center justify-between">
+<a class="flex items-center space-x-2" href="https://razdevator-po-foto.github.io/">
+<img alt="Logo" class="h-16 w-16 object-contain" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png"/>
+</a>
+<h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">Sounds</h1>
+<button class="text-white focus:outline-none ml-4" id="menu-toggle">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+</div>
+<nav class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center" id="main-menu">
+<a class="block hover:underline" href="https://razdevator-po-foto.github.io/mini-telegram/">Каталог приложений Телеграмм</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-12">
+<section class="mb-12">
+<div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
+<div class="md:w-1/3 flex justify-end">
+<img alt="Sounds" class="w-24 h-24 max-w-xs" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/sounds_og.jpg">
+</img></div>
+<div class="md:w-2/3">
+<p class="text-lg mb-4">Sounds: откройте мир мемных голосовых в Telegram! Уникальная коллекция для вашего общения.</p>
+</div>
+</div>
+<div class="mt-6 text-center">
+<a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://t.me/soundsapp_bot" rel="noopener noreferrer" target="_blank">
               Запустить в Телеграмм
             </a>
-          </div>
-        </section>
-        <section class="mb-12">
-            <div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-<div class="flex justify-center gap-4 my-4">
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/sounds_1.jpg" alt="Быстрая отправка голосовых мемов через мини-приложение Sounds" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/sounds_2.jpg" alt="Обширная библиотека звуков для Telegram-чатов" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/sounds_3.jpg" alt="Удобный поиск и отправка аудио-фрагментов в Telegram" class="w-1/3 rounded shadow"/>
+<a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://t.me/mp3memes_bot?start=_tgr_l1UIPBBkYmQy" rel="noopener noreferrer" target="_blank">
+              Аналог (даже лучше)
+            </a>
+
 </div>
-
+</section>
+<section class="mb-12">
+<div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex justify-center gap-4 my-4">
+<img alt="Быстрая отправка голосовых мемов через мини-приложение Sounds" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/sounds_1.jpg"/>
+<img alt="Обширная библиотека звуков для Telegram-чатов" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/sounds_2.jpg"/>
+<img alt="Удобный поиск и отправка аудио-фрагментов в Telegram" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/sounds_3.jpg"/>
+</div>
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Sounds: оживите ваши чаты с помощью голосовых мемов</h2>
-
 <p class="mb-2">Хотите добавить перчинки в общение и удивить друзей оригинальными аудио? Мини-приложение Sounds для Telegram — это ваш ключ к миру забавных голосовых сообщений и вирусных звуков. Забудьте о долгих поисках и сложных настройках: всё, что вам нужно, находится всего в одном клике.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Основные возможности</h2>
 <p class="mb-2">Sounds — это мини-приложение, которое позволяет мгновенно отправлять голосовые мемы и популярные звуковые фрагменты прямо в любой чат Telegram. Для доступа к обширной библиотеке аудио достаточно ввести инлайн-команду <code>@sounds</code> в любом диалоге или группе. После активации откроется встроенный каталог, где вы найдете сотни аудио-фрагментов на самые разные темы — от актуальных интернет-мемов до крылатых фраз из фильмов и сериалов. Выберите понравившийся звук, и он моментально отправится вашему собеседнику в виде голосового сообщения.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Для кого и как использовать</h2>
 <p class="mb-2">Это приложение идеально подойдет активным пользователям Telegram, которые ценят юмор и стремятся сделать свое общение более ярким и запоминающимся. Главное преимущество Sounds — отсутствие необходимости в отдельной установке. Доступ осуществляется напрямую через инлайн-команду, что экономит память вашего устройства и ваше время. Процесс использования максимально интуитивен: вызовите <code>@sounds</code>, найдите нужный аудио-клип среди предложенных вариантов и отправьте его одним касанием.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Сравнение с аналогами</h2>
 <p class="mb-2">В отличие от других мини-приложений, ориентированных на мемы (например, @notmeme или @notmemes), Sounds специализируется исключительно на аудиоформате. В то время как большинство аналогов работают с изображениями или видео, Sounds фокусируется на создании уникального голосового опыта. Кроме того, в отличие от внешних бот-решений, вам не потребуется оформлять подписку или переходить в отдельный чат для использования сервиса.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Преимущества и особенности</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Мгновенный доступ:</strong> используйте команду <code>@sounds</code> без установки.</li>
-    <li class="mb-2"><strong>Обширная библиотека:</strong> огромный выбор популярных голосовых мемов и звуков.</li>
-    <li class="mb-2"><strong>Простота использования:</strong> интуитивно понятный интерфейс и легкая отправка.</li>
+<li class="mb-2"><strong>Мгновенный доступ:</strong> используйте команду <code>@sounds</code> без установки.</li>
+<li class="mb-2"><strong>Обширная библиотека:</strong> огромный выбор популярных голосовых мемов и звуков.</li>
+<li class="mb-2"><strong>Простота использования:</strong> интуитивно понятный интерфейс и легкая отправка.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Ограничения</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Только аудио:</strong> сервис ограничен отправкой голосовых сообщений.</li>
-    <li class="mb-2"><strong>Отсутствие кастомизации:</strong> нет возможности создавать собственные звуки.</li>
-    <li class="mb-2"><strong>Ограниченный поиск:</strong> не предусмотрен поиск по категориям или тегам.</li>
+<li class="mb-2"><strong>Только аудио:</strong> сервис ограничен отправкой голосовых сообщений.</li>
+<li class="mb-2"><strong>Отсутствие кастомизации:</strong> нет возможности создавать собственные звуки.</li>
+<li class="mb-2"><strong>Ограниченный поиск:</strong> не предусмотрен поиск по категориям или тегам.</li>
 </ul>
 </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p class="mb-3">&copy; 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
-        </div>
-    </footer>
-
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-4">
+<div class="container mx-auto text-center">
+<p class="mb-3">© 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
+</div>
+</footer>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -114,7 +102,7 @@
         accurateTrackBounce:true
    });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;"/></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {

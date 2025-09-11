@@ -1,113 +1,97 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Календарь @calendar0bot в Telegram: создавайте события, встречи и задачи. Удобная синхронизация с другими сервисами. Управляйте своим временем легко!">
-
-    <title>Календарь @calendar0bot: лучшие напоминания и события в Telegram</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="canonical" href="/kalendar-calendarbot/" />
-
-    <link rel="icon" href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" type="image/svg+xml" />
-</head>
+<meta charset="utf-8"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Календарь @calendar0bot в Telegram: создавайте события, встречи и задачи. Удобная синхронизация с другими сервисами. Управляйте своим временем легко!" name="description"/>
+<title>Календарь @calendar0bot: лучшие напоминания и события в Telegram</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="/kalendar-calendarbot/" rel="canonical">
+<link href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+</link></meta></head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white">
-            <div class="container mx-auto px-2 py-2 flex items-center justify-between">
-                
-                <a href="https://razdevator-po-foto.github.io/" class="flex items-center space-x-2">
-                    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png" alt="Logo" class="h-16 w-16 object-contain">
-                    
-                </a>
-                <h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">Календарь @calendar0bot</h1>
-                <button id="menu-toggle" class="text-white focus:outline-none ml-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <nav id="main-menu" class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center">
-                <a href="https://razdevator-po-foto.github.io/mini-telegram/" class="block hover:underline">Каталог приложений Телеграмм</a>
-            </nav>
-        </header>
-    
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
-        <section class="mb-12">
-          <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
-
-            <div class="md:w-1/3 flex justify-end">
-              <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/kalendar_calendarbot_og.jpg" alt="Календарь @calendar0bot" class="w-24 h-24 max-w-xs" />
-            </div>
-
-            <div class="md:w-2/3">
-              <p class="text-lg mb-4">Календарь @calendar0bot: ваш личный ассистент для организации дней. Планируйте задачи, создавайте напоминания и управляйте расписанием эффективно. Получите максимум от каждого дня!</p>
-            </div>
-          </div>
-
-          <div class="mt-6 text-center">
-            <a href="https://t.me/calendar0bot" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" rel="noopener noreferrer" target="_blank">
+<!-- Header -->
+<header class="bg-blue-600 text-white">
+<div class="container mx-auto px-2 py-2 flex items-center justify-between">
+<a class="flex items-center space-x-2" href="https://razdevator-po-foto.github.io/">
+<img alt="Logo" class="h-16 w-16 object-contain" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png"/>
+</a>
+<h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">Календарь @calendar0bot</h1>
+<button class="text-white focus:outline-none ml-4" id="menu-toggle">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+</div>
+<nav class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center" id="main-menu">
+<a class="block hover:underline" href="https://razdevator-po-foto.github.io/mini-telegram/">Каталог приложений Телеграмм</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-12">
+<section class="mb-12">
+<div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
+<div class="md:w-1/3 flex justify-end">
+<img alt="Календарь @calendar0bot" class="w-24 h-24 max-w-xs" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/kalendar_calendarbot_og.jpg">
+</img></div>
+<div class="md:w-2/3">
+<p class="text-lg mb-4">Календарь @calendar0bot: ваш личный ассистент для организации дней. Планируйте задачи, создавайте напоминания и управляйте расписанием эффективно. Получите максимум от каждого дня!</p>
+</div>
+</div>
+<div class="mt-6 text-center">
+<a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://t.me/calendar0bot?start=_tgr_6TabsBI5NjY6" rel="noopener noreferrer" target="_blank">
               Запустить в Телеграмм
             </a>
-          </div>
-        </section>
-        <section class="mb-12">
-            <div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-<div class="flex justify-center gap-4 my-4">
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/kalendar_calendarbot_1.jpg" alt="Интерфейс Telegram-бота для управления событиями" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/kalendar_calendarbot_2.jpg" alt="Пример создания записи в календаре через бота" class="w-1/3 rounded shadow"/>
 </div>
-
+</section>
+<section class="mb-12">
+<div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex justify-center gap-4 my-4">
+<img alt="Интерфейс Telegram-бота для управления событиями" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/kalendar_calendarbot_1.jpg"/>
+<img alt="Пример создания записи в календаре через бота" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/kalendar_calendarbot_2.jpg"/>
+</div>
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">CalendarBot: ваш личный помощник для организации времени в Telegram</h2>
-
 <p class="mb-2">CalendarBot – это удобное мини-приложение для Telegram, которое поможет вам легко создавать и синхронизировать события. Интегрируйте его с вашими любимыми календарями, такими как Google Calendar, Apple Calendar, Яндекс.Календарь и другими сервисами, поддерживающими протокол CalDAV. Объедините все свои расписания в одном месте!</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Ключевые возможности:</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Быстрое создание событий</strong>: просто отправьте боту скриншот, фото билета, документ или голосовое сообщение – и событие будет добавлено в ваш календарь.</li>
-    <li class="mb-2"><strong>Универсальная синхронизация</strong>: поддержка Google, Apple, Яндекс.Алисы и других сервисов с CalDAV для бесшовной интеграции.</li>
-    <li class="mb-2"><strong>Гибкое управление</strong>: отменяйте, переносите события или узнавайте свои планы на ближайшие дни – как текстом, так и голосом.</li>
-    <li class="mb-2"><strong>Ежедневные уведомления</strong>: получайте утренний план дня прямо в Telegram.</li>
-    <li class="mb-2"><strong>Удобство для команд</strong>: добавляйте календарь в группы, делитесь событиями с коллегами или подписчиками.</li>
+<li class="mb-2"><strong>Быстрое создание событий</strong>: просто отправьте боту скриншот, фото билета, документ или голосовое сообщение – и событие будет добавлено в ваш календарь.</li>
+<li class="mb-2"><strong>Универсальная синхронизация</strong>: поддержка Google, Apple, Яндекс.Алисы и других сервисов с CalDAV для бесшовной интеграции.</li>
+<li class="mb-2"><strong>Гибкое управление</strong>: отменяйте, переносите события или узнавайте свои планы на ближайшие дни – как текстом, так и голосом.</li>
+<li class="mb-2"><strong>Ежедневные уведомления</strong>: получайте утренний план дня прямо в Telegram.</li>
+<li class="mb-2"><strong>Удобство для команд</strong>: добавляйте календарь в группы, делитесь событиями с коллегами или подписчиками.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Как легко добавить событие:</h2>
 <p class="mb-2">Управлять своим расписанием через CalendarBot невероятно просто. Попробуйте следующие команды:</p>
 <ul class="list-disc pl-10">
-    <li class="mb-2">"Завтра в 11 вечера кино"</li>
-    <li class="mb-2">"3 сентября перевернуть календарь"</li>
-    <li class="mb-2">"Каждый вторник в 2 часа дня — английский"</li>
-    <li class="mb-2">"Через 2 часа звонок, напомни за 15 и за 5 минут"</li>
-    <li class="mb-2">"Перенеси звонок на полчаса вперед"</li>
-    <li class="mb-2">"Какие планы на следующую неделю?"</li>
-    <li class="mb-2">"Какое будет число через 10 рабочих дней?"</li>
+<li class="mb-2">"Завтра в 11 вечера кино"</li>
+<li class="mb-2">"3 сентября перевернуть календарь"</li>
+<li class="mb-2">"Каждый вторник в 2 часа дня — английский"</li>
+<li class="mb-2">"Через 2 часа звонок, напомни за 15 и за 5 минут"</li>
+<li class="mb-2">"Перенеси звонок на полчаса вперед"</li>
+<li class="mb-2">"Какие планы на следующую неделю?"</li>
+<li class="mb-2">"Какое будет число через 10 рабочих дней?"</li>
 </ul>
 <p class="mb-2">Эти же команды можно отправлять голосовыми сообщениями. Также бот умеет обрабатывать скриншоты, фотографии билетов, документы и файлы календаря (.ics).</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Начните с настроек:</h2>
 <p class="mb-2">Рекомендуем зайти в ⚙️ настройки, чтобы проверить ваш часовой пояс и язык. Не забудьте подключить синхронизацию с Google/Apple календарями для полного контроля над вашим расписанием.</p>
-
 <blockquote>
-    <p class="mb-2">Есть вопросы или предложения? Свяжитесь с нами: @ask_calendar0bot</p>
+<p class="mb-2">Есть вопросы или предложения? Свяжитесь с нами: @ask_calendar0bot</p>
 </blockquote>
 </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p class="mb-3">&copy; 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
-        </div>
-    </footer>
-
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-4">
+<div class="container mx-auto text-center">
+<p class="mb-3">© 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
+</div>
+</footer>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -120,7 +104,7 @@
         accurateTrackBounce:true
    });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;"/></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {

@@ -1,160 +1,133 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AnyChars 18+ в Телеграм: 500 уникальных персонажей, генерация изображений, пошлый режим и заработок токенов. Общайтесь по-новому!">
-
-    <title>AnyChars Telegram: общайтесь с ИИ-персонажами 18+ без ограничений</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="canonical" href="/anychars/" />
-    <link rel="icon" href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" type="image/svg+xml" />
-</head>
+<meta charset="utf-8"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="AnyChars 18+ в Телеграм: 500 уникальных персонажей, генерация изображений, пошлый режим и заработок токенов. Общайтесь по-новому!" name="description"/>
+<title>AnyChars Telegram: общайтесь с ИИ-персонажами 18+ без ограничений</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="/anychars/" rel="canonical">
+<link href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+</link></meta></head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white">
-            <div class="container mx-auto px-2 py-2 flex items-center justify-between">
-                
-                <a href="https://razdevator-po-foto.github.io/" class="flex items-center space-x-2">
-                    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png" alt="Logo" class="h-16 w-16 object-contain">
-                    
-                </a>
-                <h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">AnyChars</h1>
-                <button id="menu-toggle" class="text-white focus:outline-none ml-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <nav id="main-menu" class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center">
-                <a href="https://razdevator-po-foto.github.io/mini-telegram/" class="block hover:underline">Каталог приложений Телеграмм</a>
-            </nav>
-        </header>
-    
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
-        <section class="mb-12">
-          <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
-
-            <div class="md:w-1/3 flex justify-end">
-              <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/anychars_og.jpg" alt="AnyChars" class="w-24 h-24 max-w-xs" />
-            </div>
-
-            <div class="md:w-2/3">
-              <p class="text-lg mb-4">AnyChars: ваш мир ролевых игр и уникальных картинок! Общайтесь с 500+ ИИ-персонажами, создавайте арты по описаниям. Откройте безграничные возможности для творчества и общения.</p>
-            </div>
-          </div>
-
-          <div class="mt-6 text-center">
-            <a href="https://t.me/anychars18_bot" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" rel="noopener noreferrer" target="_blank">
+<!-- Header -->
+<header class="bg-blue-600 text-white">
+<div class="container mx-auto px-2 py-2 flex items-center justify-between">
+<a class="flex items-center space-x-2" href="https://razdevator-po-foto.github.io/">
+<img alt="Logo" class="h-16 w-16 object-contain" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png"/>
+</a>
+<h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">AnyChars</h1>
+<button class="text-white focus:outline-none ml-4" id="menu-toggle">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+</div>
+<nav class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center" id="main-menu">
+<a class="block hover:underline" href="https://razdevator-po-foto.github.io/mini-telegram/">Каталог приложений Телеграмм</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-12">
+<section class="mb-12">
+<div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
+<div class="md:w-1/3 flex justify-end">
+<img alt="AnyChars" class="w-24 h-24 max-w-xs" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/anychars_og.jpg">
+</img></div>
+<div class="md:w-2/3">
+<p class="text-lg mb-4">AnyChars: ваш мир ролевых игр и уникальных картинок! Общайтесь с 500+ ИИ-персонажами, создавайте арты по описаниям. Откройте безграничные возможности для творчества и общения.</p>
+</div>
+</div>
+<div class="mt-6 text-center">
+<a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://t.me/anychars18_bot?start=_tgr_fysua0s1OTli" rel="noopener noreferrer" target="_blank">
               Запустить в Телеграмм
             </a>
-          </div>
-        </section>
-        <section class="mb-12">
-            <div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-<div class="flex justify-center gap-4 my-4">
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/anychars_1.jpg" alt="Взаимодействие с AI-персонажами в Telegram через AnyChars" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/anychars_2.jpg" alt="AnyChars: генерация уникальных изображений с помощью ИИ" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/anychars_3.jpg" alt="Откровенное общение 18+ с виртуальными аватарами в AnyChars" class="w-1/3 rounded shadow"/>
 </div>
-
+</section>
+<section class="mb-12">
+<div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex justify-center gap-4 my-4">
+<img alt="Взаимодействие с AI-персонажами в Telegram через AnyChars" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/anychars_1.jpg"/>
+<img alt="AnyChars: генерация уникальных изображений с помощью ИИ" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/anychars_2.jpg"/>
+<img alt="Откровенное общение 18+ с виртуальными аватарами в AnyChars" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/anychars_3.jpg"/>
+</div>
 <p class="mb-2">AnyChars 18+ — ваш проводник в мир виртуального общения с искусственным интеллектом прямо в Telegram. Это первое подобное мини-приложение, предлагающее пользователям 18+ погрузиться в диалоги с разнообразными AI-персонажами из любимых жанров и вселенных.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Основные возможности AnyChars 18+</h2>
-
 <p class="mb-2">Откройте для себя уникальный опыт взаимодействия с продвинутой нейросетью, лежащей в основе более 500 неповторимых персонажей. Каждый из них обладает собственной историей, характером и стилем общения.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Интеллектуальное общение</h2>
 <p class="mb-2">Погрузитесь в беседы с более чем 500 уникальными AI-персонажами. Продвинутая нейросеть обеспечивает реалистичность и глубину диалогов, делая каждое общение особенным.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Генерация изображений</h2>
 <p class="mb-2">Создавайте уникальные визуальные образы персонажей на основе ваших текстовых описаний. Функция становится доступна уже после 5 сообщений в чате, позволяя воплощать ваши фантазии в картинки.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Гибкие режимы диалога</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Обычный режим:</strong> идеален для свободных бесед, ролевых игр или изучения мира вашего персонажа.</li>
-    <li class="mb-2"><strong>Пошлый режим:</strong> наслаждайтесь откровенными разговорами без каких-либо ограничений. ИИ адаптируется к самым смелым темам, обеспечивая полный комфорт.</li>
+<li class="mb-2"><strong>Обычный режим:</strong> идеален для свободных бесед, ролевых игр или изучения мира вашего персонажа.</li>
+<li class="mb-2"><strong>Пошлый режим:</strong> наслаждайтесь откровенными разговорами без каких-либо ограничений. ИИ адаптируется к самым смелым темам, обеспечивая полный комфорт.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Внутренняя валюта — токены</h2>
 <p class="mb-2">Токены — это ключ к полному функционалу приложения. Они необходимы для доступа к персонажам, генерации изображений и использования премиум-функций.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Как начать использовать AnyChars 18+</h2>
-
 <p class="mb-2">Найти и запустить AnyChars 18+ проще простого: просто найдите в Telegram бота @AnyCharsBot.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Выбор персонажа</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2">Используйте удобный поиск по имени, категории (например, фэнтези, аниме, исторические личности) или подкатегории (герои, злодеи).</li>
-    <li class="mb-2">Доступно более 50 категорий и 200 подкатегорий, объединяющих 500 уникальных персонажей.</li>
-    <li class="mb-2">Сменить собеседника можно прямо в окне чата, не закрывая приложение, с помощью кнопки «Сменить персонажа».</li>
+<li class="mb-2">Используйте удобный поиск по имени, категории (например, фэнтези, аниме, исторические личности) или подкатегории (герои, злодеи).</li>
+<li class="mb-2">Доступно более 50 категорий и 200 подкатегорий, объединяющих 500 уникальных персонажей.</li>
+<li class="mb-2">Сменить собеседника можно прямо в окне чата, не закрывая приложение, с помощью кнопки «Сменить персонажа».</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Режимы общения</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Обычный режим:</strong> ведите дружеские беседы, задавайте вопросы о мире персонажа или участвуйте в ролевых играх. Обсудите пиратские приключения с виртуальным корсаром!</li>
-    <li class="mb-2"><strong>Пошлый режим:</strong> для тех, кто ценит откровенность. ИИ поддерживает смелые темы, а переписка в каждом режиме сохраняется отдельно.</li>
+<li class="mb-2"><strong>Обычный режим:</strong> ведите дружеские беседы, задавайте вопросы о мире персонажа или участвуйте в ролевых играх. Обсудите пиратские приключения с виртуальным корсаром!</li>
+<li class="mb-2"><strong>Пошлый режим:</strong> для тех, кто ценит откровенность. ИИ поддерживает смелые темы, а переписка в каждом режиме сохраняется отдельно.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Генерация изображений</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2">Функция активируется после 4 сообщений в чате.</li>
-    <li class="mb-2">Опишите желаемую сцену, например: «персонаж в готическом замке, в черном платье, под луной». ИИ сгенерирует изображение, учитывая контекст последних 4 сообщений.</li>
-    <li class="mb-2">Кнопка «Сгенерировать заново» позволяет получать новые варианты изображения, пока вы не будете полностью удовлетворены результатом.</li>
-    <li class="mb-2">Время генерации обычно составляет 5-10 секунд, но может увеличиваться до 30 секунд при высокой нагрузке на серверы.</li>
+<li class="mb-2">Функция активируется после 4 сообщений в чате.</li>
+<li class="mb-2">Опишите желаемую сцену, например: «персонаж в готическом замке, в черном платье, под луной». ИИ сгенерирует изображение, учитывая контекст последних 4 сообщений.</li>
+<li class="mb-2">Кнопка «Сгенерировать заново» позволяет получать новые варианты изображения, пока вы не будете полностью удовлетворены результатом.</li>
+<li class="mb-2">Время генерации обычно составляет 5-10 секунд, но может увеличиваться до 30 секунд при высокой нагрузке на серверы.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Очистка истории</h2>
 <p class="mb-2">Кнопка «Очистить» удаляет всю историю переписки с текущим персонажем. Это удобно для начала нового диалога или в случае непредвиденных сбоев.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Токены: как получить и на что потратить</h2>
-
 <p class="mb-2">Токены — внутренняя валюта AnyChars 18+, обеспечивающая доступ к общению, генерации изображений и разблокировке эксклюзивных персонажей.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Способы получения токенов:</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Покупка за Telegram Stars:</strong> 100 токенов за 1.99 USD.</li>
-    <li class="mb-2"><strong>Бесплатные токены:</strong> получайте до 20 токенов за подписку на спонсорские каналы (до 5 каналов в день).</li>
-    <li class="mb-2"><strong>Приглашение друзей:</strong> заработайте 50 токенов за каждого нового пользователя, который еще не пользовался ботом.</li>
-    <li class="mb-2"><strong>Выполнение заданий:</strong> пройдите опросы, просмотрите рекламу или зарегистрируйтесь в сервисах, чтобы получить 10-50 токенов.</li>
+<li class="mb-2"><strong>Покупка за Telegram Stars:</strong> 100 токенов за 1.99 USD.</li>
+<li class="mb-2"><strong>Бесплатные токены:</strong> получайте до 20 токенов за подписку на спонсорские каналы (до 5 каналов в день).</li>
+<li class="mb-2"><strong>Приглашение друзей:</strong> заработайте 50 токенов за каждого нового пользователя, который еще не пользовался ботом.</li>
+<li class="mb-2"><strong>Выполнение заданий:</strong> пройдите опросы, просмотрите рекламу или зарегистрируйтесь в сервисах, чтобы получить 10-50 токенов.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Расход токенов:</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2">Общение с базовыми персонажами: 1 токен за 10 сообщений.</li>
-    <li class="mb-2">Разблокировка премиум-персонажей: 5 токенов; дальнейшее общение — 2 токена за 10 сообщений.</li>
-    <li class="mb-2">Генерация изображений: 3 токена за одно изображение, 1 токен за повторную генерацию.</li>
+<li class="mb-2">Общение с базовыми персонажами: 1 токен за 10 сообщений.</li>
+<li class="mb-2">Разблокировка премиум-персонажей: 5 токенов; дальнейшее общение — 2 токена за 10 сообщений.</li>
+<li class="mb-2">Генерация изображений: 3 токена за одно изображение, 1 токен за повторную генерацию.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Ключевые особенности AnyChars 18+:</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2">Удобный поиск персонажей по различным критериям.</li>
-    <li class="mb-2">Быстрая смена собеседников без выхода из приложения.</li>
-    <li class="mb-2">Возможность очистить историю переписки с конкретным персонажем.</li>
-    <li class="mb-2">Система вознаграждений за приглашение новых пользователей.</li>
-    <li class="mb-2">Контекстно-зависимая генерация изображений с учетом последних сообщений.</li>
-    <li class="mb-2">Персонализированные AI-персонажи с уникальными чертами характера.</li>
-    <li class="mb-2">Получение бесплатных токенов за подписку на каналы партнеров.</li>
-    <li class="mb-2">Персонажи запоминают до 50 предыдущих сообщений для более глубокого погружения.</li>
+<li class="mb-2">Удобный поиск персонажей по различным критериям.</li>
+<li class="mb-2">Быстрая смена собеседников без выхода из приложения.</li>
+<li class="mb-2">Возможность очистить историю переписки с конкретным персонажем.</li>
+<li class="mb-2">Система вознаграждений за приглашение новых пользователей.</li>
+<li class="mb-2">Контекстно-зависимая генерация изображений с учетом последних сообщений.</li>
+<li class="mb-2">Персонализированные AI-персонажи с уникальными чертами характера.</li>
+<li class="mb-2">Получение бесплатных токенов за подписку на каналы партнеров.</li>
+<li class="mb-2">Персонажи запоминают до 50 предыдущих сообщений для более глубокого погружения.</li>
 </ul>
 </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p class="mb-3">&copy; 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
-        </div>
-    </footer>
-
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-4">
+<div class="container mx-auto text-center">
+<p class="mb-3">© 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
+</div>
+</footer>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -167,7 +140,7 @@
         accurateTrackBounce:true
    });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;"/></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {

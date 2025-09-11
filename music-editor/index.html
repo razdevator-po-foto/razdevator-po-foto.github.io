@@ -1,113 +1,101 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Редактируй теги и обложки аудио в Telegram! Удобный бот для быстрой правки информации о треках. 61тыс+ пользователей в месяц.">
-
-    <title>Telegram Music Editor: измените теги аудио онлайн</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="canonical" href="/music-editor/" />
-
-    <link rel="icon" href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" type="image/svg+xml" />
-</head>
+<meta charset="utf-8"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Редактируй теги и обложки аудио в Telegram! Удобный бот для быстрой правки информации о треках. 61тыс+ пользователей в месяц." name="description"/>
+<title>Telegram Music Editor: измените теги аудио онлайн</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="/music-editor/" rel="canonical">
+<link href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+</link></meta></head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white">
-            <div class="container mx-auto px-2 py-2 flex items-center justify-between">
-                
-                <a href="https://razdevator-po-foto.github.io/" class="flex items-center space-x-2">
-                    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png" alt="Logo" class="h-16 w-16 object-contain">
-                    
-                </a>
-                <h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">music editor</h1>
-                <button id="menu-toggle" class="text-white focus:outline-none ml-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <nav id="main-menu" class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center">
-                <a href="https://razdevator-po-foto.github.io/mini-telegram/" class="block hover:underline">Каталог приложений Телеграмм</a>
-            </nav>
-        </header>
-    
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
-        <section class="mb-12">
-          <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
-
-            <div class="md:w-1/3 flex justify-end">
-              <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/music_editor_og.jpg" alt="music editor" class="w-24 h-24 max-w-xs" />
-            </div>
-
-            <div class="md:w-2/3">
-              <p class="text-lg mb-4">Используйте нашего Telegram-бота, чтобы легко редактировать теги аудиофайлов. Получите удобный music editor прямо в мессенджере, чтобы управлять метаданными, обложками и другой информацией о ваших треках.</p>
-            </div>
-          </div>
-
-          <div class="mt-6 text-center">
-            <a href="https://t.me/musiceditor_tgbot" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" rel="noopener noreferrer" target="_blank">
+<!-- Header -->
+<header class="bg-blue-600 text-white">
+<div class="container mx-auto px-2 py-2 flex items-center justify-between">
+<a class="flex items-center space-x-2" href="https://razdevator-po-foto.github.io/">
+<img alt="Logo" class="h-16 w-16 object-contain" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png"/>
+</a>
+<h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">music editor</h1>
+<button class="text-white focus:outline-none ml-4" id="menu-toggle">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+</div>
+<nav class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center" id="main-menu">
+<a class="block hover:underline" href="https://razdevator-po-foto.github.io/mini-telegram/">Каталог приложений Телеграмм</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-12">
+<section class="mb-12">
+<div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
+<div class="md:w-1/3 flex justify-end">
+<img alt="music editor" class="w-24 h-24 max-w-xs" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/music_editor_og.jpg">
+</img></div>
+<div class="md:w-2/3">
+<p class="text-lg mb-4">Используйте нашего Telegram-бота, чтобы легко редактировать теги аудиофайлов. Получите удобный music editor прямо в мессенджере, чтобы управлять метаданными, обложками и другой информацией о ваших треках.</p>
+</div>
+</div>
+<div class="mt-6 text-center">
+<a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://t.me/musiceditor_tgbot" rel="noopener noreferrer" target="_blank">
               Запустить в Телеграмм
             </a>
-          </div>
-        </section>
-        <section class="mb-12">
-            <div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-<div class="flex justify-center gap-4 my-4">
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/music_editor_1.jpg" alt="редактирование тегов MP3-файлов через Telegram" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/music_editor_2.jpg" alt="изменение метаданных аудио онлайн" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/music_editor_3.jpg" alt="онлайн-редактор аудио тегов в мессенджере" class="w-1/3 rounded shadow"/>
+<a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://t.me/lan4music_bot?start=_tgr_m2sN_RQ0MTUy" rel="noopener noreferrer" target="_blank">
+              Аналог (даже лучше)
+            </a>
+
 </div>
-
+</section>
+<section class="mb-12">
+<div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex justify-center gap-4 my-4">
+<img alt="редактирование тегов MP3-файлов через Telegram" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/music_editor_1.jpg"/>
+<img alt="изменение метаданных аудио онлайн" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/music_editor_2.jpg"/>
+<img alt="онлайн-редактор аудио тегов в мессенджере" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/music_editor_3.jpg"/>
+</div>
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Music Editor: ваш удобный онлайн-редактор тегов аудио в Telegram</h2>
-
 <p class="mb-2">Откройте для себя простоту управления музыкальными файлами прямо в Telegram с помощью Music Editor – инновационного мини-приложения. Этот сервис позволяет легко и быстро корректировать метаданные ваших аудиозаписей, не покидая любимого мессенджера.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Как это работает?</h2>
 <p class="mb-2">Все операции выполняются через интуитивно понятного чат-бота. Просто отправьте аудиофайл, и бот предоставит вам полный контроль над его тегами. Вы сможете без труда изменить название композиции, имя исполнителя, альбом, жанр и другую важную информацию.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Основные возможности сервиса:</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Редактирование ID3-тегов</strong>: корректируйте метаданные для MP3 и других популярных аудиоформатов.</li>
-    <li class="mb-2"><strong>Управление обложками</strong>: добавляйте или меняйте обложки треков одним кликом.</li>
-    <li class="mb-2"><strong>Автоматическая коррекция</strong>: сервис самостоятельно выявляет и исправляет некорректные или отсутствующие теги.</li>
-    <li class="mb-2"><strong>Сохранение и отправка</strong>: получайте отредактированный файл обратно в чат – готовый к прослушиванию или распространению.</li>
+<li class="mb-2"><strong>Редактирование ID3-тегов</strong>: корректируйте метаданные для MP3 и других популярных аудиоформатов.</li>
+<li class="mb-2"><strong>Управление обложками</strong>: добавляйте или меняйте обложки треков одним кликом.</li>
+<li class="mb-2"><strong>Автоматическая коррекция</strong>: сервис самостоятельно выявляет и исправляет некорректные или отсутствующие теги.</li>
+<li class="mb-2"><strong>Сохранение и отправка</strong>: получайте отредактированный файл обратно в чат – готовый к прослушиванию или распространению.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Преимущества Music Editor:</h2>
 <p class="mb-2">Этот инструмент создан для максимального удобства пользователей:</p>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Никакой установки</strong>: не требуется скачивать и устанавливать дополнительное программное обеспечение.</li>
-    <li class="mb-2"><strong>Доступность</strong>: работает везде, где есть Telegram и интернет-соединение.</li>
-    <li class="mb-2"><strong>Простота</strong>: интуитивно понятный интерфейс, справится даже новичок.</li>
-    <li class="mb-2"><strong>Конфиденциальность</strong>: все действия происходят внутри Telegram, без регистрации на сторонних ресурсах.</li>
+<li class="mb-2"><strong>Никакой установки</strong>: не требуется скачивать и устанавливать дополнительное программное обеспечение.</li>
+<li class="mb-2"><strong>Доступность</strong>: работает везде, где есть Telegram и интернет-соединение.</li>
+<li class="mb-2"><strong>Простота</strong>: интуитивно понятный интерфейс, справится даже новичок.</li>
+<li class="mb-2"><strong>Конфиденциальность</strong>: все действия происходят внутри Telegram, без регистрации на сторонних ресурсах.</li>
 </ul>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Идеально подходит для:</h2>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Систематизации коллекции</strong>: приведите все ваши аудиозаписи к единому стандарту тегов для удобной сортировки и поиска.</li>
-    <li class="mb-2"><strong>Исправления ошибок</strong>: быстро исправляйте некорректные названия или данные исполнителей, полученные из разных источников.</li>
-    <li class="mb-2"><strong>Подготовки к публикации</strong>: добавляйте привлекательные обложки к трекам перед тем, как поделиться ими в группах или каналах.</li>
+<li class="mb-2"><strong>Систематизации коллекции</strong>: приведите все ваши аудиозаписи к единому стандарту тегов для удобной сортировки и поиска.</li>
+<li class="mb-2"><strong>Исправления ошибок</strong>: быстро исправляйте некорректные названия или данные исполнителей, полученные из разных источников.</li>
+<li class="mb-2"><strong>Подготовки к публикации</strong>: добавляйте привлекательные обложки к трекам перед тем, как поделиться ими в группах или каналах.</li>
 </ul>
 <p class="mb-2">Music Editor – ваш надежный помощник в мире цифровой музыки, доступный прямо в Telegram.</p>
 </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p class="mb-3">&copy; 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
-        </div>
-    </footer>
-
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-4">
+<div class="container mx-auto text-center">
+<p class="mb-3">© 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
+</div>
+</footer>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -120,7 +108,7 @@
         accurateTrackBounce:true
    });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;"/></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {

@@ -1,135 +1,120 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chartrix: ваш AI-компаньон в Телеграм на русском. Общайтесь с 150 персонажами из фильмов, игр и аниме. Откройте мир увлекательных диалогов!">
-
-    <title>Chartrix в Telegram: общайся с AI-персонажами и погрузись в мир чат-историй</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="canonical" href="/chartrix/" />
-
-    <link rel="icon" href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" type="image/svg+xml" />
-</head>
+<meta charset="utf-8"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Chartrix: ваш AI-компаньон в Телеграм на русском. Общайтесь с 150 персонажами из фильмов, игр и аниме. Откройте мир увлекательных диалогов!" name="description"/>
+<title>Chartrix в Telegram: общайся с AI-персонажами и погрузись в мир чат-историй</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="/chartrix/" rel="canonical">
+<link href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+</link></meta></head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white">
-            <div class="container mx-auto px-2 py-2 flex items-center justify-between">
-                
-                <a href="https://razdevator-po-foto.github.io/" class="flex items-center space-x-2">
-                    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png" alt="Logo" class="h-16 w-16 object-contain">
-                    
-                </a>
-                <h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">Chartrix</h1>
-                <button id="menu-toggle" class="text-white focus:outline-none ml-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <nav id="main-menu" class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center">
-                <a href="https://razdevator-po-foto.github.io/mini-telegram/" class="block hover:underline">Каталог приложений Телеграмм</a>
-            </nav>
-        </header>
-    
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
-        <section class="mb-12">
-          <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
-
-            <div class="md:w-1/3 flex justify-end">
-              <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/chartrix_og.jpg" alt="Chartrix" class="w-24 h-24 max-w-xs" />
-            </div>
-
-            <div class="md:w-2/3">
-              <p class="text-lg mb-4">Откройте мир общения с AI-персонажами с Chartrix! Создайте уникального героя или выберите из 150 готовых, с глубокой историей и характером. Поддержка 12 языков, включая русский, делает общение интуитивным.</p>
-            </div>
-          </div>
-
-          <div class="mt-6 text-center">
-            <a href="https://t.me/ChartrixBot" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" rel="noopener noreferrer" target="_blank">
+<!-- Header -->
+<header class="bg-blue-600 text-white">
+<div class="container mx-auto px-2 py-2 flex items-center justify-between">
+<a class="flex items-center space-x-2" href="https://razdevator-po-foto.github.io/">
+<img alt="Logo" class="h-16 w-16 object-contain" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png"/>
+</a>
+<h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">Chartrix</h1>
+<button class="text-white focus:outline-none ml-4" id="menu-toggle">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+</div>
+<nav class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center" id="main-menu">
+<a class="block hover:underline" href="https://razdevator-po-foto.github.io/mini-telegram/">Каталог приложений Телеграмм</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-12">
+<section class="mb-12">
+<div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
+<div class="md:w-1/3 flex justify-end">
+<img alt="Chartrix" class="w-24 h-24 max-w-xs" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/chartrix_og.jpg">
+</img></div>
+<div class="md:w-2/3">
+<p class="text-lg mb-4">Откройте мир общения с AI-персонажами с Chartrix! Создайте уникального героя или выберите из 150 готовых, с глубокой историей и характером. Поддержка 12 языков, включая русский, делает общение интуитивным.</p>
+</div>
+</div>
+<div class="mt-6 text-center">
+<a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://t.me/ChartrixBot?start=_tgr_9P5HCMI5YTdi" rel="noopener noreferrer" target="_blank">
               Запустить в Телеграмм
             </a>
-          </div>
-        </section>
-        <section class="mb-12">
-            <div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
+</div>
+</section>
+<section class="mb-12">
+<div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+<div class="bg-white p-6 rounded-lg shadow-lg">
 <div class="flex flex-col">
-    <div class="flex justify-center gap-4 my-4">
-        <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/chartrix_1.jpg" alt="Интерактивное общение с AI-персонажами в Telegram" class="w-1/3 rounded shadow"/>
-        <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/chartrix_2.jpg" alt="AI-бот для общения с героями из фильмов и игр" class="w-1/3 rounded shadow"/>
-        <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/chartrix_3.jpg" alt="Создание собственных AI-компаньонов в мессенджере" class="w-1/3 rounded shadow"/>
-    </div>
-
-    <h2 class="text-2xl font-bold mb-4">Chartrix: ваш AI-собеседник в Telegram</h2>
-    <p class="mb-4">Chartrix — это инновационное мини-приложение внутри Telegram, которое открывает двери в мир захватывающего общения с искусственным интеллектом. Представьте, что вы можете поболтать с любимыми персонажами из культовых фильмов, захватывающих игр и популярных сериалов. Chartrix делает это реальностью, предлагая круглосуточный доступ к вашим AI-компаньонам без необходимости сложной регистрации.</p>
-
-    <h3 class="text-xl font-semibold mb-2">Что такое Chartrix?</h2>
-    <p class="mb-4">Chartrix — это уникальная платформа, где AI-персонажи, вдохновленные реальными и вымышленными героями, оживают в диалогах. Вы можете вести беседы, воплощать свои идеи, создавая собственных уникальных персонажей, и погружаться в интерактивные сценарии. Обратите внимание, что приложение предназначено для совершеннолетней аудитории и может содержать контент для взрослых.</p>
-    <p class="mb-4">Благодаря передовым языковым моделям, Chartrix обеспечивает глубоко естественные и осмысленные ответы, которые точно соответствуют характеру выбранного персонажа. Общайтесь с такими иконами, как Шерлок Холмс или Тони Старк, и получайте от них релевантные и характерные реплики. Начать диалог проще простого — никаких регистраций или платежей не требуется.</p>
-
-    <h3 class="text-xl font-semibold mb-2">Ключевые возможности Chartrix</h2>
-    <ul class="list-disc list-inside mb-4 space-y-2">
-        <li class="mb-2">
-            <span class="font-semibold">Режим «Погружение»</span> — AI-персонажи адаптируются к вашим интересам и стилю общения, используя данные из Telegram API для усиления эффекта реального диалога.
+<div class="flex justify-center gap-4 my-4">
+<img alt="Интерактивное общение с AI-персонажами в Telegram" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/chartrix_1.jpg"/>
+<img alt="AI-бот для общения с героями из фильмов и игр" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/chartrix_2.jpg"/>
+<img alt="Создание собственных AI-компаньонов в мессенджере" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/chartrix_3.jpg"/>
+</div>
+<h2 class="text-2xl font-bold mb-4">Chartrix: ваш AI-собеседник в Telegram</h2>
+<p class="mb-4">Chartrix — это инновационное мини-приложение внутри Telegram, которое открывает двери в мир захватывающего общения с искусственным интеллектом. Представьте, что вы можете поболтать с любимыми персонажами из культовых фильмов, захватывающих игр и популярных сериалов. Chartrix делает это реальностью, предлагая круглосуточный доступ к вашим AI-компаньонам без необходимости сложной регистрации.</p>
+<h3 class="text-xl font-semibold mb-2">Что такое Chartrix?
+<p class="mb-4">Chartrix — это уникальная платформа, где AI-персонажи, вдохновленные реальными и вымышленными героями, оживают в диалогах. Вы можете вести беседы, воплощать свои идеи, создавая собственных уникальных персонажей, и погружаться в интерактивные сценарии. Обратите внимание, что приложение предназначено для совершеннолетней аудитории и может содержать контент для взрослых.</p>
+<p class="mb-4">Благодаря передовым языковым моделям, Chartrix обеспечивает глубоко естественные и осмысленные ответы, которые точно соответствуют характеру выбранного персонажа. Общайтесь с такими иконами, как Шерлок Холмс или Тони Старк, и получайте от них релевантные и характерные реплики. Начать диалог проще простого — никаких регистраций или платежей не требуется.</p>
+<h3 class="text-xl font-semibold mb-2">Ключевые возможности Chartrix
+<ul class="list-disc list-inside mb-4 space-y-2">
+<li class="mb-2">
+<span class="font-semibold">Режим «Погружение»</span> — AI-персонажи адаптируются к вашим интересам и стилю общения, используя данные из Telegram API для усиления эффекта реального диалога.
         </li>
-        <li class="mb-2">
-            <span class="font-semibold">Интеграция с медиа</span> — делитесь изображениями или аудио, чтобы ваш AI-собеседник мог прокомментировать их в духе своего прототипа.
+<li class="mb-2">
+<span class="font-semibold">Интеграция с медиа</span> — делитесь изображениями или аудио, чтобы ваш AI-собеседник мог прокомментировать их в духе своего прототипа.
         </li>
-        <li class="mb-2">
-            <span class="font-semibold">Интерактивные квесты</span> — более 20 встроенных сценариев, от детективных расследований до космических приключений, где ваш выбор влияет на развитие сюжета.
+<li class="mb-2">
+<span class="font-semibold">Интерактивные квесты</span> — более 20 встроенных сценариев, от детективных расследований до космических приключений, где ваш выбор влияет на развитие сюжета.
         </li>
-        <li class="mb-2">
-            <span class="font-semibold">Редактор персонажей</span> — инструмент для создания уникальных AI-компаньонов с настройкой голоса, манеры речи и даже уровня сарказма. Сообщество уже создало свыше 300 тысяч неповторимых персонажей.
+<li class="mb-2">
+<span class="font-semibold">Редактор персонажей</span> — инструмент для создания уникальных AI-компаньонов с настройкой голоса, манеры речи и даже уровня сарказма. Сообщество уже создало свыше 300 тысяч неповторимых персонажей.
         </li>
-        <li class="mb-2">
-            <span class="font-semibold">Мультиязычные диалоги</span> — персонажи способны общаться на нескольких языках одновременно, легко переключаясь между ними по вашему запросу.
+<li class="mb-2">
+<span class="font-semibold">Мультиязычные диалоги</span> — персонажи способны общаться на нескольких языках одновременно, легко переключаясь между ними по вашему запросу.
         </li>
-    </ul>
-    <p class="mb-4">Функции «Погружения», увлекательные квесты и гибкий редактор персонажей выводят Chartrix на лидирующие позиции среди аналогичных AI-приложений. Несмотря на некоторые ограничения в бесплатной версии, Chartrix остается доступным и невероятно увлекательным инструментом для общения и самовыражения.</p>
-
-    <h3 class="text-xl font-semibold mb-2">Как начать общение?</h2>
-    <p class="mb-4">Присоединяйтесь к более чем 2.5 миллионам пользователей и откройте для себя мир из 150 готовых персонажей Chartrix. Этот уникальный опыт придется по душе всем поклонникам поп-культуры и творческим личностям. Чтобы начать диалог с AI-героями:</p>
-    <ol class="list-decimal list-inside mb-4 space-y-2">
-        <li class="mb-2">Откройте приложение Telegram и найдите бота по имени @ChartrixBot.</li>
-        <li class="mb-2">Нажмите кнопку «Старт» или введите команду /start.</li>
-        <li class="mb-2">Перейдите в мини-приложение, следуя подсказкам.</li>
-        <li class="mb-2">Выбирайте одного из 150 доступных персонажей или создайте своего собственного.</li>
-        <li class="mb-2">Настройте своего персонажа, задав ему имя, внешность, характер и предысторию (до 500 символов).</li>
-        <li class="mb-2">Начните диалог: задавайте вопросы, предлагайте темы или сценарии.</li>
-        <li class="mb-2">Используйте текстовые команды или удобные встроенные кнопки для управления беседой.</li>
-        <li class="mb-2">Экспериментируйте с различными режимами общения: дружеский, романтический или философский.</li>
-        <li class="mb-2">Сохраняйте понравившиеся диалоги для последующего доступа.</li>
-    </ol>
-    <p class="mb-4">Оформление подписки открывает доступ к 50 эксклюзивным персонажам, расширенным сюжетным линиям и функции голосовых ответов, которая доступна исключительно в мобильных версиях Telegram.</p>
-
-    <h3 class="text-xl font-semibold mb-2">Дополнительные преимущества</h2>
-    <ul class="list-disc list-inside mb-4 space-y-2">
-        <li class="mb-2">Обширная библиотека из 150 предустановленных персонажей с возможностью создания собственных.</li>
-        <li class="mb-2">Поддержка 12 языков, включая русский, английский и японский, для комфортного общения.</li>
-        <li class="mb-2">Кроссплатформенная доступность: работает на Android, iOS, Windows, macOS и Linux без необходимости установки.</li>
-        <li class="mb-2">Разнообразие режимов общения: от непринужденного дружеского до глубокого философского.</li>
-        <li class="mb-2">Эксклюзивный контент и расширенные функции доступны по подписке.</li>
-        <li class="mb-2">Приложение ориентировано на взрослую аудиторию (18+).</li>
-    </ul>
+</ul>
+<p class="mb-4">Функции «Погружения», увлекательные квесты и гибкий редактор персонажей выводят Chartrix на лидирующие позиции среди аналогичных AI-приложений. Несмотря на некоторые ограничения в бесплатной версии, Chartrix остается доступным и невероятно увлекательным инструментом для общения и самовыражения.</p>
+<h3 class="text-xl font-semibold mb-2">Как начать общение?
+<p class="mb-4">Присоединяйтесь к более чем 2.5 миллионам пользователей и откройте для себя мир из 150 готовых персонажей Chartrix. Этот уникальный опыт придется по душе всем поклонникам поп-культуры и творческим личностям. Чтобы начать диалог с AI-героями:</p>
+<ol class="list-decimal list-inside mb-4 space-y-2">
+<li class="mb-2">Откройте приложение Telegram и найдите бота по имени @ChartrixBot.</li>
+<li class="mb-2">Нажмите кнопку «Старт» или введите команду /start.</li>
+<li class="mb-2">Перейдите в мини-приложение, следуя подсказкам.</li>
+<li class="mb-2">Выбирайте одного из 150 доступных персонажей или создайте своего собственного.</li>
+<li class="mb-2">Настройте своего персонажа, задав ему имя, внешность, характер и предысторию (до 500 символов).</li>
+<li class="mb-2">Начните диалог: задавайте вопросы, предлагайте темы или сценарии.</li>
+<li class="mb-2">Используйте текстовые команды или удобные встроенные кнопки для управления беседой.</li>
+<li class="mb-2">Экспериментируйте с различными режимами общения: дружеский, романтический или философский.</li>
+<li class="mb-2">Сохраняйте понравившиеся диалоги для последующего доступа.</li>
+</ol>
+<p class="mb-4">Оформление подписки открывает доступ к 50 эксклюзивным персонажам, расширенным сюжетным линиям и функции голосовых ответов, которая доступна исключительно в мобильных версиях Telegram.</p>
+<h3 class="text-xl font-semibold mb-2">Дополнительные преимущества
+<ul class="list-disc list-inside mb-4 space-y-2">
+<li class="mb-2">Обширная библиотека из 150 предустановленных персонажей с возможностью создания собственных.</li>
+<li class="mb-2">Поддержка 12 языков, включая русский, английский и японский, для комфортного общения.</li>
+<li class="mb-2">Кроссплатформенная доступность: работает на Android, iOS, Windows, macOS и Linux без необходимости установки.</li>
+<li class="mb-2">Разнообразие режимов общения: от непринужденного дружеского до глубокого философского.</li>
+<li class="mb-2">Эксклюзивный контент и расширенные функции доступны по подписке.</li>
+<li class="mb-2">Приложение ориентировано на взрослую аудиторию (18+).</li>
+</ul>
+</h3></h3></h3></h3></div>
 </div>
 </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p class="mb-3">&copy; 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
-        </div>
-    </footer>
-
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-4">
+<div class="container mx-auto text-center">
+<p class="mb-3">© 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
+</div>
+</footer>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -142,7 +127,7 @@
         accurateTrackBounce:true
    });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;"/></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {

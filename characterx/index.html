@@ -1,123 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Создайте ИИ-персонажей в мини-приложении CharacterX Telegram! Ролевые игры, общение, уникальные сценарии и генерация изображений. Получайте токены за активность.">
-
-    <title>CharacterX: ролевые игры с ИИ в Telegram – ваш новый мир приключений</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="canonical" href="/characterx/" />
-
-    <link rel="icon" href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" type="image/svg+xml" />
-</head>
+<meta charset="utf-8"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Создайте ИИ-персонажей в мини-приложении CharacterX Telegram! Ролевые игры, общение, уникальные сценарии и генерация изображений. Получайте токены за активность." name="description"/>
+<title>CharacterX: ролевые игры с ИИ в Telegram – ваш новый мир приключений</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="/characterx/" rel="canonical">
+<link href="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+</link></meta></head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white">
-            <div class="container mx-auto px-2 py-2 flex items-center justify-between">
-                
-                <a href="https://razdevator-po-foto.github.io/" class="flex items-center space-x-2">
-                    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png" alt="Logo" class="h-16 w-16 object-contain">
-                    
-                </a>
-                <h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">CharacterX</h1>
-                <button id="menu-toggle" class="text-white focus:outline-none ml-4">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <nav id="main-menu" class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center">
-                <a href="https://razdevator-po-foto.github.io/mini-telegram/" class="block hover:underline">Каталог приложений Телеграмм</a>
-            </nav>
-        </header>
-    
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
-        <section class="mb-12">
-          <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
-
-            <div class="md:w-1/3 flex justify-end">
-              <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/characterx_og.jpg" alt="CharacterX" class="w-24 h-24 max-w-xs" />
-            </div>
-
-            <div class="md:w-2/3">
-              <p class="text-lg mb-4">CharacterX: создайте до 5 виртуальных компаньонов, общайтесь с ними в реальном времени и генерируйте до 10 уникальных изображений ежедневно. Персонажи, ИИ-друзья, виртуальные помощники - все это CharacterX!</p>
-            </div>
-          </div>
-
-          <div class="mt-6 text-center">
-            <a href="https://t.me/CharacterX_bot" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" rel="noopener noreferrer" target="_blank">
+<!-- Header -->
+<header class="bg-blue-600 text-white">
+<div class="container mx-auto px-2 py-2 flex items-center justify-between">
+<a class="flex items-center space-x-2" href="https://razdevator-po-foto.github.io/">
+<img alt="Logo" class="h-16 w-16 object-contain" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png"/>
+</a>
+<h1 class="text-2xl sm:text-3xl font-bold text-center flex-1 text-white">CharacterX</h1>
+<button class="text-white focus:outline-none ml-4" id="menu-toggle">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+</div>
+<nav class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center" id="main-menu">
+<a class="block hover:underline" href="https://razdevator-po-foto.github.io/mini-telegram/">Каталог приложений Телеграмм</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-12">
+<section class="mb-12">
+<div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-6">
+<div class="md:w-1/3 flex justify-end">
+<img alt="CharacterX" class="w-24 h-24 max-w-xs" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/characterx_og.jpg">
+</img></div>
+<div class="md:w-2/3">
+<p class="text-lg mb-4">CharacterX: создайте до 5 виртуальных компаньонов, общайтесь с ними в реальном времени и генерируйте до 10 уникальных изображений ежедневно. Персонажи, ИИ-друзья, виртуальные помощники - все это CharacterX!</p>
+</div>
+</div>
+<div class="mt-6 text-center">
+<a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="https://t.me/CharacterX_bot?start=_tgr_iYJ4iZcyOTZi" rel="noopener noreferrer" target="_blank">
               Запустить в Телеграмм
             </a>
-          </div>
-        </section>
-        <section class="mb-12">
-            <div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-<div class="flex justify-center gap-4 my-4">
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/characterx_1.jpg" alt="AI-компаньоны для ролевых игр и общения" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/characterx_2.jpg" alt="Генерация уникальных персонажей с ИИ" class="w-1/3 rounded shadow"/>
-    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/characterx_3.jpg" alt="Интерактивные истории с виртуальными собеседниками" class="w-1/3 rounded shadow"/>
 </div>
-
+</section>
+<section class="mb-12">
+<div class="text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex justify-center gap-4 my-4">
+<img alt="AI-компаньоны для ролевых игр и общения" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/characterx_1.jpg"/>
+<img alt="Генерация уникальных персонажей с ИИ" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/characterx_2.jpg"/>
+<img alt="Интерактивные истории с виртуальными собеседниками" class="w-1/3 rounded shadow" src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/characterx_3.jpg"/>
+</div>
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">CharacterX: ваш личный AI-собеседник в Telegram</h2>
-
 <p class="mb-2">Откройте для себя мир интерактивного общения с CharacterX — инновационным мини-приложением в Telegram, которое позволяет создавать и взаимодействовать с уникальными AI-персонажами. Это ваш шанс погрузиться в захватывающие ролевые игры, воплотить самые смелые фантазии и найти виртуального компаньона, полностью соответствующего вашим ожиданиям. Приложение ориентировано на взрослую аудиторию, предлагая безопасное пространство для реализации ваших идей.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Что такое CharacterX?</h2>
 <p class="mb-2">CharacterX — это платформа для создания и общения с персонализированными виртуальными личностями. Вы можете самостоятельно настраивать внешность, характер и стиль общения любого AI-персонажа, делая ваше взаимодействие максимально реалистичным и увлекательным. Ежемесячно более 2,5 миллионов пользователей выбирают CharacterX для развлечений, ролевых игр и поиска уникального цифрового опыта.</p>
-
 <p class="mb-2">Основные возможности приложения:</p>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Текстовые диалоги в реальном времени:</strong> общайтесь с вашими AI-персонажами без задержек, наслаждаясь естественными и осмысленными беседами.</li>
-    <li class="mb-2"><strong>Генерация изображений:</strong> создавайте уникальные визуальные образы ваших собеседников или сцены из ваших ролевых сценариев.</li>
-    <li class="mb-2"><strong>Глубокая настройка персонажей:</strong> от внешности до черт характера — вы контролируете каждую деталь, создавая идеального AI-компаньона.</li>
+<li class="mb-2"><strong>Текстовые диалоги в реальном времени:</strong> общайтесь с вашими AI-персонажами без задержек, наслаждаясь естественными и осмысленными беседами.</li>
+<li class="mb-2"><strong>Генерация изображений:</strong> создавайте уникальные визуальные образы ваших собеседников или сцены из ваших ролевых сценариев.</li>
+<li class="mb-2"><strong>Глубокая настройка персонажей:</strong> от внешности до черт характера — вы контролируете каждую деталь, создавая идеального AI-компаньона.</li>
 </ul>
-
 <p class="mb-2">Благодаря интеграции с Telegram Bot API, CharacterX доступен прямо из вашего мессенджера, не требуя установки дополнительных программ. Приложение работает на базе современных веб-технологий и обеспечивает надежную защиту ваших данных.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Как начать играть с CharacterX?</h2>
 <p class="mb-2">Начать ваше приключение в CharacterX проще простого:</p>
 <ol class="list-disc pl-10">
-    <li class="mb-2">Найдите бота CharacterX в Telegram (по ссылке t.me/CharacterXBot).</li>
-    <li class="mb-2">Пройдите быструю регистрацию через ваш аккаунт Telegram.</li>
-    <li class="mb-2">Выберите готового персонажа или создайте своего, настроив его внешность (до 10 параметров) и характер (до 5 черт). Процесс настройки занимает всего около 3 минут.</li>
-    <li class="mb-2">Начните диалог и погрузитесь в ролевые сценарии или просто наслаждайтесь общением.</li>
+<li class="mb-2">Найдите бота CharacterX в Telegram (по ссылке t.me/CharacterXBot).</li>
+<li class="mb-2">Пройдите быструю регистрацию через ваш аккаунт Telegram.</li>
+<li class="mb-2">Выберите готового персонажа или создайте своего, настроив его внешность (до 10 параметров) и характер (до 5 черт). Процесс настройки занимает всего около 3 минут.</li>
+<li class="mb-2">Начните диалог и погрузитесь в ролевые сценарии или просто наслаждайтесь общением.</li>
 </ol>
-
 <p class="mb-2">AI-персонажи готовы к взаимодействию: они обрабатывают ваши запросы с помощью передовых технологий обработки естественного языка и отвечают всего за 1 секунду. В бесплатной версии вы можете генерировать до 10 изображений ежедневно, а пользователи премиум-версии получают расширенные возможности.</p>
-
 <h2 class="text-2xl font-bold mb-2 mt-4 text-black-600">Ваши возможности и награды</h2>
 <p class="mb-2">CharacterX предлагает обширный набор функций для настройки и взаимодействия. В бесплатной версии вы можете создать до 5 уникальных персонажей, а с премиум-подпиской их число возрастает до 20. Премиум-доступ открывает также возможность генерации до 3 NSFW-изображений в сутки.</p>
-
 <p class="mb-2"><strong>Ключевые преимущества:</strong></p>
 <ul class="list-disc pl-10">
-    <li class="mb-2"><strong>Персонализация:</strong> полная свобода в создании уникальных AI-персонажей.</li>
-    <li class="mb-2"><strong>Динамичное общение:</strong> мгновенные ответы AI и поддержка сложных ролевых сценариев.</li>
-    <li class="mb-2"><strong>Визуализация:</strong> быстрая генерация изображений по вашим запросам.</li>
-    <li class="mb-2"><strong>Безопасность:</strong> шифрование всех диалогов для вашей конфиденциальности.</li>
-    <li class="mb-2"><strong>Бонусы:</strong> получайте токены за ежедневную активность, которые можно обменять на дополнительные возможности, такие как расширенная настройка или увеличенный лимит генерации изображений.</li>
+<li class="mb-2"><strong>Персонализация:</strong> полная свобода в создании уникальных AI-персонажей.</li>
+<li class="mb-2"><strong>Динамичное общение:</strong> мгновенные ответы AI и поддержка сложных ролевых сценариев.</li>
+<li class="mb-2"><strong>Визуализация:</strong> быстрая генерация изображений по вашим запросам.</li>
+<li class="mb-2"><strong>Безопасность:</strong> шифрование всех диалогов для вашей конфиденциальности.</li>
+<li class="mb-2"><strong>Бонусы:</strong> получайте токены за ежедневную активность, которые можно обменять на дополнительные возможности, такие как расширенная настройка или увеличенный лимит генерации изображений.</li>
 </ul>
-
 <p class="mb-2"><strong>Как играть и что получить:</strong></p>
 <p class="mb-2">Начните чат с выбранным персонажем и погрузитесь в мир интерактивных историй. За активное участие в жизни приложения — ежедневный вход, участие в ролевых квестах — вы будете получать бонусные токены. Эти токены станут вашим ключом к разблокировке эксклюзивных функций и расширенным возможностям генерации контента.</p>
 </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p class="mb-3">&copy; 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
-        </div>
-    </footer>
-
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-4">
+<div class="container mx-auto text-center">
+<p class="mb-3">© 2025 <a href="https://razdevator-po-foto.github.io/" rel="noopener noreferrer">Раздеть по фото</a>. Все права защищены.</p>
+</div>
+</footer>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -130,7 +110,7 @@
         accurateTrackBounce:true
    });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/86167499" style="position:absolute; left:-9999px;"/></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
