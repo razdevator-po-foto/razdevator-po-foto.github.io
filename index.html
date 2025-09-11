@@ -14,11 +14,27 @@
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <!-- Header -->
     <header class="bg-blue-600 text-white">
-        <div class="container text-center mx-auto px-6 py-4">
+            <div class="container mx-auto px-2 py-2 flex items-center justify-between">
+                
+                <a href="https://razdevator-po-foto.github.io/" class="flex items-center space-x-2">
+                    <img src="https://raw.githubusercontent.com/razdevator-po-foto/razdevator-po-foto.github.io/refs/heads/main/images/logo.png" alt="Logo" class="h-16 w-16 object-contain">
+                    
+                </a>
+                <div class="container text-center mx-auto px-6 py-4">
             <h1 class="text-3xl font-bold">Нейросети и телеграм-боты для раздевания девушек по фото</h1>
             <p class="text-xl mt-2">Здесь можно раздеть фотографию подруги.</p>
         </div>
-    </header>
+                <button id="menu-toggle" class="text-white focus:outline-none ml-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <nav id="main-menu" class="hidden flex-col bg-blue-700 text-white px-6 py-4 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-4 sm:justify-center sm:items-center">
+                <a href="https://razdevator-po-foto.github.io/mini-telegram/" class="block hover:underline">Каталог приложений Телеграмм</a>
+            </nav>
+        </header>
     
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-12">
